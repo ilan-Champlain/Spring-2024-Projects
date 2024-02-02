@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+    //Code from "bendux" 2D Player Movement In Unity.
+
+
     private float horizontal;
     public float speed = 8f;
     public float jumpHeight = 6f;
@@ -18,11 +22,13 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-        if (Input.GetKeyDown("Space") && IsGrounded()){
+        if (Input.GetKeyDown("space") && IsGrounded())
+        {
+            Debug.Log("Jumping");
             rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
         }
 
-        if (Input.GetKeyUp("Space") && rb.velocity.y > 0f) {
+        if (Input.GetKeyUp("space") && rb.velocity.y > 0f) {
             rb.velocity = new Vector2 (rb.velocity.x, rb.velocity.y * 0.5f);
         }
     }
