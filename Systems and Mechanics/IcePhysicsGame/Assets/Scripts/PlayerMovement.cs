@@ -9,6 +9,11 @@ public class PlayerMovement : MonoBehaviour
 
 
     private float horizontal;
+
+    public float speedMultiplier = 1.3f;
+
+    public float speedMilestones = 10f;
+
     public float speed = 8f;
     public float jumpHeight = 6f;
 
@@ -16,11 +21,24 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     // Start is called before the first frame update
- 
+    void start()
+    {
+
+    }
+
 
     // Update is called once per frame
     void Update()
     {
+        if (transform.position.x > speedMilestones)
+        {
+            speedMilestones += speedMilestones;
+
+            speed = speed * speedMultiplier;
+
+        }
+
+        rb.velocity = new Vector2(speed, rb.velocity.y);
         horizontal = Input.GetAxisRaw("Horizontal");
         if (Input.GetKeyDown("space") && IsGrounded())
         {
@@ -40,6 +58,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        //rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
 }
