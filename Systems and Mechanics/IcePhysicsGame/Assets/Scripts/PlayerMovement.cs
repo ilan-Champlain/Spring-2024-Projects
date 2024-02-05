@@ -10,9 +10,9 @@ public class PlayerMovement : MonoBehaviour
 
     private float horizontal;
 
-    public float speedMultiplier = 1.3f;
+    public float speedMultiplier = 2f;
 
-    public float speedMilestones = 10f;
+    public float speedMilestones = 5f;
 
     public float speed = 8f;
     public float jumpHeight = 6f;
@@ -20,11 +20,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
-    // Start is called before the first frame update
-    void start()
-    {
-
-    }
+    
 
 
     // Update is called once per frame
@@ -34,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
         {
             speedMilestones += speedMilestones;
 
-            speed = speed * speedMultiplier;
+            speed = speed + speedMultiplier;
 
         }
 
