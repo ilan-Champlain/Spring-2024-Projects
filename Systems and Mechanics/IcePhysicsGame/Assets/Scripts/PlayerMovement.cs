@@ -15,6 +15,9 @@ public class PlayerMovement : MonoBehaviour
     public float speedMilestones = 5f;
 
     public float speed = 8f;
+
+    
+
     public float jumpHeight = 6f;
 
     [SerializeField] private Rigidbody2D rb;
@@ -26,6 +29,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        speed = Mathf.Clamp(speed, 0f, 30f);
+
         if (transform.position.x > speedMilestones)
         {
             speedMilestones += speedMilestones;
@@ -34,8 +40,19 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            speed = speed - 0.01f;
+            
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            speed = speed + 3;
+        }
+
         rb.velocity = new Vector2(speed, rb.velocity.y);
-        horizontal = Input.GetAxisRaw("Horizontal");
+        //horizontal = Input.GetAxisRaw("Horizontal");
         if (Input.GetKeyDown("space") && IsGrounded())
         {
             Debug.Log("Jumping");
@@ -52,8 +69,5 @@ public class PlayerMovement : MonoBehaviour
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
-    private void FixedUpdate()
-    {
-        //rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-    }
+    
 }
