@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
     private float horizontal;
 
-    public float speedMultiplier = 2f;
+    public float speedMultiplier = 1.5f;
 
     public float speedMilestones = 5f;
 
@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (transform.position.x > speedMilestones)
         {
-            speedMilestones += speedMilestones;
+            speedMilestones += 5;
 
             speed = speed + speedMultiplier;
 
