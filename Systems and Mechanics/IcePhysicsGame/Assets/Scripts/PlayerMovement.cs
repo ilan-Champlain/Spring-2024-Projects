@@ -42,13 +42,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
-            speed = speed - 0.01f;
+            speed = speed - 1f;
 
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            speed = speed - 0.01f;
+            speed = speed - 1f;
             
         }
 
