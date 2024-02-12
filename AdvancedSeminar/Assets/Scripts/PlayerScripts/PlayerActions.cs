@@ -26,6 +26,18 @@ public class PlayerActions : MonoBehaviour
             blueFlask.SetActive(false);
             greenFlask.SetActive(false);
         }
+        if (blueCollected == true)
+        {
+            blueFlask.SetActive(true);
+            greenFlask.SetActive(false);
+            redFlask.SetActive(false);
+        }
+        if (greenCollected == true)
+        {
+            greenFlask.SetActive(true);
+            redFlask.SetActive(false);
+            blueFlask.SetActive(false);
+        }
     }
 
     public void OnTriggerEnter(Collider other) 
@@ -44,10 +56,13 @@ public class PlayerActions : MonoBehaviour
             redCollected = false;
             blueCollected = true;
             greenCollected = false;
+
+            Debug.Log("Collided");
         }
 
-        if (other == red)
+        if (other == green)
         {
+            Debug.Log("Collided");
             redCollected = false;
             blueCollected = false;
             greenCollected = true;
