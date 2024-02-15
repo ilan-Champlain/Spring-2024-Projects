@@ -29,7 +29,7 @@ public class InteractCommand : MonoBehaviour
     {
         if(collision.transform.tag == "Player")
         {
-            Instructions.SetActive(false);
+            Instructions.SetActive(true);
             Action = true;
         }
     }

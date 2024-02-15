@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 636285708132805506}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.6795908, w: 0.7335914}
-  m_LocalPosition: {x: 0.093, y: 1.889, z: 1.457}
+  m_LocalPosition: {x: 0.021, y: 1.889, z: 1.457}
   m_LocalScale: {x: 0.60225, y: 0.60225, z: 0.60225}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -133,7 +133,7 @@ Transform:
   m_GameObject: {fileID: 1618015738560770527}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.6795908, w: 0.7335914}
-  m_LocalPosition: {x: 0.064, y: 1.846, z: -1.201}
+  m_LocalPosition: {x: -0.005, y: 1.846, z: -1.201}
   m_LocalScale: {x: 0.60225, y: 0.60225, z: 0.60225}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -344,13 +344,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3655784319276729397}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.016056685, y: -0.23952705, z: -0.009177173, w: 0.97071356}
-  m_LocalPosition: {x: 0.051, y: 2.659, z: 1.499}
+  m_LocalRotation: {x: -0.010650784, y: -0.23982824, z: 0.012716719, w: 0.9706737}
+  m_LocalPosition: {x: 0.001, y: 2.659, z: 1.436}
   m_LocalScale: {x: 0.28405, y: 0.8269101, z: 0.28405}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8430303439796272715}
-  m_LocalEulerAnglesHint: {x: -2.038, y: -27.712, z: -0.58}
+  m_LocalEulerAnglesHint: {x: -0.835, y: -27.769, z: 1.708}
 --- !u!33 &7165645996386796070
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -543,7 +543,7 @@ Transform:
   m_GameObject: {fileID: 5296442877003215732}
   serializedVersion: 2
   m_LocalRotation: {x: -0.016056685, y: -0.23952705, z: -0.009177173, w: 0.97071356}
-  m_LocalPosition: {x: 0.138, y: 2.597, z: -1.232}
+  m_LocalPosition: {x: 0.035, y: 2.597, z: -1.232}
   m_LocalScale: {x: 0.28405, y: 0.8269101, z: 0.28405}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -743,7 +743,9 @@ MonoBehaviour:
   Instructions: {fileID: 0}
   Trigger: {fileID: 0}
   FlaskContainer: {fileID: 0}
-  Flask: {fileID: 0}
+  RightFlask: {fileID: 0}
+  Other1Flask: {fileID: 0}
+  Other2Flask: {fileID: 0}
   Action: 0
 --- !u!1 &5454192553486832412
 GameObject:
@@ -773,7 +775,7 @@ Transform:
   m_GameObject: {fileID: 5454192553486832412}
   serializedVersion: 2
   m_LocalRotation: {x: -0.24006452, y: -0, z: -0, w: 0.97075695}
-  m_LocalPosition: {x: 0.14900017, y: 0.909, z: -0.598}
+  m_LocalPosition: {x: 0.028, y: 0.909, z: -0.598}
   m_LocalScale: {x: 0.28405, y: 1.172606, z: 0.28405}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -880,7 +882,7 @@ Transform:
   m_GameObject: {fileID: 7989004436988485946}
   serializedVersion: 2
   m_LocalRotation: {x: 0.31185025, y: -0, z: -0, w: 0.9501313}
-  m_LocalPosition: {x: 0.14900017, y: 0.808, z: 0.725}
+  m_LocalPosition: {x: 0.028, y: 0.808, z: 0.725}
   m_LocalScale: {x: 0.28405, y: 1.4822911, z: 0.28405}
   m_ConstrainProportionsScale: 0
   m_Children: []
