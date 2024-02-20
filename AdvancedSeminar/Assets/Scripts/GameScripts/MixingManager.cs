@@ -37,7 +37,28 @@ public class MixingManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.E)) 
+        {
+            if (Action == true)
+            {
+                if (mixtureRounds == 1)
+                {
+                    ChangeColorContainer1();
+
+                }
+                if (mixtureRounds == 2)
+                {
+                    ChangeColorContainer2();
+
+                }
+                if (mixtureRounds == 3)
+                {
+                    ChangeColorContainer3();
+                }
+
+                Action = false;
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -46,20 +67,7 @@ public class MixingManager : MonoBehaviour
         {
             instructions.SetActive(true);
             Action = true;
-            if (mixtureRounds == 1)
-            {
-                ChangeColorContainer1();
-                
-            }
-            if (mixtureRounds == 2)
-            {
-                ChangeColorContainer2();
-                
-            }
-            if(mixtureRounds == 3)
-            {
-                ChangeColorContainer3();
-            }
+            
         }
     }
 
@@ -151,7 +159,7 @@ public class MixingManager : MonoBehaviour
             SceneManager.LoadScene("GreenEnding");
         }
 
-        if (redCount = blueCount && redCount = greenCount)
+        if (redCount == blueCount && redCount == greenCount)
         {
             SceneManager.LoadScene("HumanEnding");
         }
