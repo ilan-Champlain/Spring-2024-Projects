@@ -116,16 +116,44 @@ public class MixingManager : MonoBehaviour
         {
             redCount++;
             redFlask.SetActive(false);
+            StartCoroutine(endScene());
         }
         if (blueFlask.activeSelf)
         {
             blueCount++;
             blueFlask.SetActive(false);
+            StartCoroutine(endScene());
         }
         if (greenFlask.activeSelf)
         {
             greenCount++;
             greenFlask.SetActive(false);
+            StartCoroutine(endScene());
+        }
+
+    }
+
+    IEnumerator endScene()
+    {
+        yield return new WaitForSeconds(5);
+        if (redCount > blueCount && redCount > greenCount) 
+        {
+            SceneManager.LoadScene("RedEnding");
+        }
+
+        if (blueCount > redCount && blueCount > greenCount)
+        {
+            SceneManager.LoadScene("BlueEnding");
+        }
+
+        if (greenCount > blueCount && greenCount > redCount)
+        {
+            SceneManager.LoadScene("GreenEnding");
+        }
+
+        if (redCount = blueCount && redCount = greenCount)
+        {
+            SceneManager.LoadScene("HumanEnding");
         }
     }
 
