@@ -12,13 +12,24 @@ public class MixingManager : MonoBehaviour
     public GameObject mixContainer3;
     public bool Action = false;
     public Scene redEnd;
+    private int mixtureRounds;
+    private Color container1Color;
+    private Color container2Color;
+    private Color container3Color;
+
+    private int redCount;
+    private int greenCount;
+    private int blueCount;
+    public GameObject redFlask;
+    public GameObject blueFlask;
+    public GameObject greenFlask;
 
 
     // Start is called before the first frame update
     void Start()
     {
         instructions.SetActive(false);
-
+        mixtureRounds = 1;
 
 
     }
@@ -35,6 +46,20 @@ public class MixingManager : MonoBehaviour
         {
             instructions.SetActive(true);
             Action = true;
+            if (mixtureRounds == 1)
+            {
+                ChangeColorContainer1();
+                
+            }
+            if (mixtureRounds == 2)
+            {
+                ChangeColorContainer2();
+                
+            }
+            if(mixtureRounds == 3)
+            {
+                ChangeColorContainer3();
+            }
         }
     }
 
@@ -42,6 +67,66 @@ public class MixingManager : MonoBehaviour
     {
         instructions.SetActive(false);
         Action = false;
+    }
+
+    void ChangeColorContainer1()
+    {
+        if (redFlask.activeSelf)
+        {
+            redCount++;
+            redFlask.SetActive(false);
+        }
+        if (blueFlask.activeSelf)
+        {
+            blueCount++;
+            blueFlask.SetActive(false);
+        }
+        if (greenFlask.activeSelf)
+        {
+            greenCount++;
+            greenFlask.SetActive(false);
+        }
+        mixtureRounds += 1;
+    }
+
+    void ChangeColorContainer2()
+    {
+        if (redFlask.activeSelf)
+        {
+            redCount++;
+            redFlask.SetActive(false);
+        }
+        if (blueFlask.activeSelf)
+        {
+            blueCount++;
+            blueFlask.SetActive(false);
+        }
+        if (greenFlask.activeSelf)
+        {
+            greenCount++;
+            greenFlask.SetActive(false);
+        }
+
+        mixtureRounds += 1;
+    }
+
+    void ChangeColorContainer3()
+    {
+        if (redFlask.activeSelf)
+        {
+            redCount++;
+            redFlask.SetActive(false);
+        }
+        if (blueFlask.activeSelf)
+        {
+            blueCount++;
+            blueFlask.SetActive(false);
+        }
+        if (greenFlask.activeSelf)
+        {
+            greenCount++;
+            greenFlask.SetActive(false);
+        }
     }
 
 }
