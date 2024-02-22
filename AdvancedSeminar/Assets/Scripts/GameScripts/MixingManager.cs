@@ -13,7 +13,7 @@ public class MixingManager : MonoBehaviour
     public bool Action = false;
     public Scene redEnd;
     private int mixtureRounds;
-
+    public GameObject MixLights;
     private int redCount;
     private int greenCount;
     private int blueCount;
@@ -27,7 +27,7 @@ public class MixingManager : MonoBehaviour
     {
         instructions.SetActive(false);
         mixtureRounds = 1;
-
+        MixLights.SetActive(false);
 
     }
 
@@ -51,9 +51,11 @@ public class MixingManager : MonoBehaviour
                 else if (mixtureRounds == 3)
                 {
                     ChangeColorContainer3();
+                    MixLights.SetActive(true);
                 }
                 
                 Action = false;
+                instructions.SetActive(false);
             }
         }
     }
