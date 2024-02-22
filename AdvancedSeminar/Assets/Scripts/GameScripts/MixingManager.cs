@@ -13,9 +13,6 @@ public class MixingManager : MonoBehaviour
     public bool Action = false;
     public Scene redEnd;
     private int mixtureRounds;
-    private Color container1Color;
-    private Color container2Color;
-    private Color container3Color;
 
     private int redCount;
     private int greenCount;
@@ -44,18 +41,18 @@ public class MixingManager : MonoBehaviour
                 if (mixtureRounds == 1)
                 {
                     ChangeColorContainer1();
-
+                    
                 }
-                if (mixtureRounds == 2)
+                else if (mixtureRounds == 2)
                 {
                     ChangeColorContainer2();
-
+                    
                 }
-                if (mixtureRounds == 3)
+                else if (mixtureRounds == 3)
                 {
                     ChangeColorContainer3();
                 }
-
+                
                 Action = false;
             }
         }
@@ -82,19 +79,22 @@ public class MixingManager : MonoBehaviour
         if (redFlask.activeSelf)
         {
             redCount++;
+            mixContainer1.GetComponent<FirstMix>().RedColor();
             redFlask.SetActive(false);
         }
-        if (blueFlask.activeSelf)
+        else if (blueFlask.activeSelf)
         {
             blueCount++;
+            mixContainer1.GetComponent<FirstMix>().BlueColor();
             blueFlask.SetActive(false);
         }
-        if (greenFlask.activeSelf)
+        else if (greenFlask.activeSelf)
         {
             greenCount++;
+            mixContainer1.GetComponent<FirstMix>().GreenColor();
             greenFlask.SetActive(false);
         }
-        mixtureRounds += 1;
+        mixtureRounds = 2;
     }
 
     void ChangeColorContainer2()
@@ -102,20 +102,22 @@ public class MixingManager : MonoBehaviour
         if (redFlask.activeSelf)
         {
             redCount++;
+            mixContainer2.GetComponent<SecondMix>().RedColor();
             redFlask.SetActive(false);
         }
-        if (blueFlask.activeSelf)
+        else if (blueFlask.activeSelf)
         {
             blueCount++;
+            mixContainer2.GetComponent<SecondMix>().BlueColor();
             blueFlask.SetActive(false);
         }
-        if (greenFlask.activeSelf)
+        else if (greenFlask.activeSelf)
         {
             greenCount++;
+            mixContainer2.GetComponent<SecondMix>().GreenColor();
             greenFlask.SetActive(false);
         }
-
-        mixtureRounds += 1;
+        mixtureRounds = 3;
     }
 
     void ChangeColorContainer3()
@@ -123,18 +125,21 @@ public class MixingManager : MonoBehaviour
         if (redFlask.activeSelf)
         {
             redCount++;
+            mixContainer3.GetComponent<ThirdMix>().RedColor();
             redFlask.SetActive(false);
             StartCoroutine(endScene());
         }
-        if (blueFlask.activeSelf)
+        else if (blueFlask.activeSelf)
         {
             blueCount++;
+            mixContainer3.GetComponent<ThirdMix>().BlueColor();
             blueFlask.SetActive(false);
             StartCoroutine(endScene());
         }
-        if (greenFlask.activeSelf)
+        else if (greenFlask.activeSelf)
         {
             greenCount++;
+            mixContainer3.GetComponent<ThirdMix>().GreenColor();
             greenFlask.SetActive(false);
             StartCoroutine(endScene());
         }
@@ -149,17 +154,17 @@ public class MixingManager : MonoBehaviour
             SceneManager.LoadScene("RedEnding");
         }
 
-        if (blueCount > redCount && blueCount > greenCount)
+        else if (blueCount > redCount && blueCount > greenCount)
         {
             SceneManager.LoadScene("BlueEnding");
         }
 
-        if (greenCount > blueCount && greenCount > redCount)
+        else if (greenCount > blueCount && greenCount > redCount)
         {
             SceneManager.LoadScene("GreenEnding");
         }
 
-        if (redCount == blueCount && redCount == greenCount)
+        else
         {
             SceneManager.LoadScene("HumanEnding");
         }
