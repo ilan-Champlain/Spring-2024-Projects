@@ -20,6 +20,8 @@ public class MixingManager : MonoBehaviour
     public GameObject redFlask;
     public GameObject blueFlask;
     public GameObject greenFlask;
+    public GameObject player;
+    public AudioSource liquidSound;
 
 
     // Start is called before the first frame update
@@ -41,17 +43,23 @@ public class MixingManager : MonoBehaviour
                 if (mixtureRounds == 1)
                 {
                     ChangeColorContainer1();
-                    
+                    liquidSound.Play();
+                    player.GetComponent<PlayerMovement>().enabled = false;
+                    Invoke("SoundPlay", 3);
                 }
                 else if (mixtureRounds == 2)
                 {
                     ChangeColorContainer2();
-                    
+                    liquidSound.Play();
+                    player.GetComponent<PlayerMovement>().enabled = false;
+                    Invoke("SoundPlay", 3);
                 }
                 else if (mixtureRounds == 3)
                 {
+                    player.GetComponent<PlayerMovement>().enabled = false;
+                    liquidSound.Play();
+                    Invoke("SoundPlay", 3);
                     ChangeColorContainer3();
-                    MixLights.SetActive(true);
                 }
                 
                 Action = false;
@@ -145,12 +153,20 @@ public class MixingManager : MonoBehaviour
             greenFlask.SetActive(false);
             StartCoroutine(endScene());
         }
+        Invoke("endScene", 3); 
+    }
 
+    void SoundPlay()
+    {
+        liquidSound.Stop();
+        player.GetComponent<PlayerMovement>().enabled = true;
     }
 
     IEnumerator endScene()
     {
+        MixLights.SetActive(true);
         yield return new WaitForSeconds(5);
+        
         if (redCount > blueCount && redCount > greenCount) 
         {
             SceneManager.LoadScene("RedEnding");

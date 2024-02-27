@@ -8,11 +8,12 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movement")]
     public float moveSpeed;
-
+    public AudioSource stepSounds;
     public Transform orientation;
 
     float horizontalInput;
     float verticalInput;
+    bool isMoving = false;
 
     Vector3 moveDirection;
 
@@ -29,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
+        
     }
 
     // Update is called once per frame
@@ -38,8 +40,67 @@ public class PlayerMovement : MonoBehaviour
             Application.Quit();
         }
 
+        if (isMoving == true)
+        {
+            stepSounds.enabled = true;
+        }
+
+        else
+        {
+            stepSounds.enabled = false;
+        }
+        isMovingCheck();
         MyInput();
         SpeedControl();
+    }
+
+    private void isMovingCheck()
+    {
+        if (Input.GetKey(KeyCode.W))
+        {
+            isMoving = true;
+        }
+
+        else if (Input.GetKey(KeyCode.A))
+        {
+            isMoving = true;
+        }
+
+        else if (Input.GetKey(KeyCode.S))
+        {
+            isMoving = true;
+        }
+
+        else if (Input.GetKey(KeyCode.D))
+        {
+            isMoving = true;
+        }
+
+        else if (Input.GetKey(KeyCode.UpArrow))
+        {
+            isMoving = true;
+        }
+
+        else if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            isMoving = true;
+        }
+
+        else if (Input.GetKey(KeyCode.RightArrow))
+        {
+            isMoving = true;
+        }
+
+        else if (Input.GetKey(KeyCode.DownArrow))
+        {
+            isMoving = true;
+        }
+
+        else
+        {
+            isMoving = false;
+        }
+
     }
 
     private void FixedUpdate()
@@ -62,6 +123,8 @@ public class PlayerMovement : MonoBehaviour
         {
             Vector3 limitedVel = flatVel.normalized * moveSpeed;
             rb.velocity= new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
+            
         }
+        
     }
 }

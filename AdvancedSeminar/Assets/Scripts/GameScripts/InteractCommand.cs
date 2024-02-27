@@ -11,6 +11,8 @@ public class InteractCommand : MonoBehaviour
     public GameObject Other1Flask;
     public GameObject Other2Flask;
     public bool Action = false;
+    public AudioSource liquidSound;
+    public GameObject player;
 
 
     //Script inspired by DIGA Hub: https://www.youtube.com/watch?v=1HbH4e0Cg6o
@@ -27,7 +29,7 @@ public class InteractCommand : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if(collision.transform.tag == "Player")
+        if (collision.transform.tag == "Player")
         {
             Instructions.SetActive(true);
             Action = true;
@@ -43,16 +45,25 @@ public class InteractCommand : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E)) 
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if (Action == true)
             {
                 Instructions.SetActive(false);
-                RightFlask.SetActive(true);
-                Other1Flask.SetActive(false);
-                Other2Flask.SetActive(false);
+                player.GetComponent<PlayerMovement>().enabled = false;
                 Action = false;
+                liquidSound.Play();
+                Invoke("soundStop", 5);
             }
         }
+    }
+
+    void soundStop()
+    {
+        RightFlask.SetActive(true);
+        Other1Flask.SetActive(false);
+        Other2Flask.SetActive(false);
+        player.GetComponent<PlayerMovement>().enabled = true;
+        liquidSound.Stop();
     }
 }
