@@ -53,7 +53,7 @@ public class InteractCommand : MonoBehaviour
                 player.GetComponent<PlayerMovement>().enabled = false;
                 Action = false;
                 liquidSound.Play();
-                Invoke("soundStop", 5);
+                Invoke("soundStop", 3);
             }
         }
     }

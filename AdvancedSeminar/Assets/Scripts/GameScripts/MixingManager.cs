@@ -153,7 +153,7 @@ public class MixingManager : MonoBehaviour
             greenFlask.SetActive(false);
             StartCoroutine(endScene());
         }
-        Invoke("endScene", 3); 
+        Invoke("endScene", 6); 
     }
 
     void SoundPlay()
@@ -164,8 +164,9 @@ public class MixingManager : MonoBehaviour
 
     IEnumerator endScene()
     {
+        yield return new WaitForSeconds(6);
         MixLights.SetActive(true);
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(6);
         
         if (redCount > blueCount && redCount > greenCount) 
         {
