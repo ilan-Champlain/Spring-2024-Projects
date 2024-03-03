@@ -7,12 +7,17 @@ public class StartMenu : MonoBehaviour
     public GameObject FirstScene;
     public GameObject Menu;
 
-    void QuitGame()
+    void Start()
+    {
+        FirstScene.SetActive(false);
+    }
+
+    public void QuitGame()
     {
         Application.Quit();
     }
 
-    void StartGame()
+    public void StartGame()
     {
         FirstScene.SetActive(true);
         Menu.SetActive(false);
