@@ -8,15 +8,36 @@ public class GreenPlayerMovement : MonoBehaviour
 
     [Header("Movement")]
     public float moveSpeed;
+
+    [Header("Keybinds")]
+    public KeyCode jumpKey = KeyCode.Space;
+    
     public AudioSource stepSounds;
+    
     public Transform orientation;
+    
     public LayerMask whatIsGround;
+    
     float horizontalInput;
+    
     float verticalInput;
+    
     bool isMoving = false;
+
+    public float jumpForce;
+
+    public float airMultiplier;
+
+    public float jumpCooldown;
+
+    public bool readyToJump;
+
     public float groundDrag;
+    
     [Header("Ground Check")]
+    
     bool grounded;
+    
     public float playerHeight;
 
     Vector3 moveDirection;
@@ -35,6 +56,14 @@ public class GreenPlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
         
+        if(Input.GetKey(jumpKey) && readyToJump && grounded)
+        {
+            readyToJump = false;
+
+            Jump();
+
+            Invoke(nameof(ResetJump), jumpCooldown);
+        }
     }
 
     // Update is called once per frame
@@ -48,7 +77,10 @@ public class GreenPlayerMovement : MonoBehaviour
         {
             rb.drag = groundDrag;
         }
-        else
+        else if ( !grounded)
+        {
+            
+        }
         {
             rb.drag = 0;
         }
@@ -125,7 +157,15 @@ public class GreenPlayerMovement : MonoBehaviour
     {
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
-        rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+        if (grounded)
+        {
+            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+        }
+
+        else if (!grounded) 
+        {
+            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+        }
     }
 
     private void SpeedControl()
@@ -139,5 +179,17 @@ public class GreenPlayerMovement : MonoBehaviour
             
         }
         
+    }
+
+    private void Jump()
+    {
+        rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+
+        rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+    }
+
+    private void ResetJump()
+    {
+        readyToJump = true;
     }
 }
