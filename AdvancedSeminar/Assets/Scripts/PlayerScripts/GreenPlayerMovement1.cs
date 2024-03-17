@@ -77,11 +77,7 @@ public class GreenPlayerMovement : MonoBehaviour
         {
             rb.drag = groundDrag;
         }
-        else if ( !grounded)
-        {
-            
-        }
-        {
+        else if ( !grounded){
             rb.drag = 0;
         }
 
