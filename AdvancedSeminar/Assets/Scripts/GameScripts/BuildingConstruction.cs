@@ -1,37 +1,41 @@
-using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.ParticleSystem;
 
-public class TVSwitch : MonoBehaviour
+public class BuildingConstruction : MonoBehaviour
 {
     public GameObject Instructions;
     public GameObject Trigger;
-    public GameObject player;
     public bool Action = false;
-    public GameObject Article1;
- 
-
+    public GameObject buildHider;
+    public GameObject building;
+    public AudioSource construction;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
-        Article1.SetActive(false);
         Instructions.SetActive(false);
         Trigger.SetActive(true);
+        buildHider.SetActive(false);
+        building.SetActive(false);
     }
-    private void OnTriggerEnter(Collider other)
+
+    private void OnTriggerEnter(Collider collision)
     {
-       if (other.transform.tag == "Player") 
-       {
+        if (collision.transform.tag == "Player")
+        {
             Instructions.SetActive(true);
             Action = true;
-       }
+        }
     }
-    private void OnTriggerExit(Collider other)
+
+    private void OnTriggerExit(Collider collision)
     {
         Instructions.SetActive(false);
         Action = false;
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -40,19 +44,17 @@ public class TVSwitch : MonoBehaviour
             if (Action == true)
             {
                 Instructions.SetActive(false);
-                
+
                 Action = false;
-                Article1.SetActive(true);
-                Invoke("ScreenOff", 10);
+                buildHider.SetActive(true);
+                Invoke("CompleteConstruct", 5);
             }
         }
     }
 
-    void ScreenOff()
+    void CompleteConstruct()
     {
-        Article1.SetActive(false);
-        Action = true;
+        building.SetActive(true);
+        buildHider.SetActive(false);
     }
-
-    
 }
