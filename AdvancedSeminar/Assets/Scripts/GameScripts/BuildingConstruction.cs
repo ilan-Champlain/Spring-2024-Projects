@@ -23,7 +23,7 @@ public class BuildingConstruction : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.transform.tag == "Player")
+        if (collision)
         {
             Instructions.SetActive(true);
             Action = true;
@@ -44,7 +44,7 @@ public class BuildingConstruction : MonoBehaviour
             if (Action == true)
             {
                 Instructions.SetActive(false);
-
+                Trigger.SetActive(false);
                 Action = false;
                 buildHider.SetActive(true);
                 Invoke("CompleteConstruct", 5);
