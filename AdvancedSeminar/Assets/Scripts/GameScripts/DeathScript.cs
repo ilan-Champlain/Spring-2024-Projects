@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class DeathScript : MonoBehaviour
 {
+    public GameObject enemy;
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.transform.tag == "Weapon")
         {
-            Destroy(this);
+            Object.Destroy(enemy);
         }
     }
 }
