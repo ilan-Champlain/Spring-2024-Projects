@@ -15,6 +15,12 @@ public class WeaponSwing : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Enemy")
+            Destroy(other.gameObject);
+    }
+
     IEnumerator Attack()
     {
         hammer.GetComponent<Animator>().Play("Player Hammer");

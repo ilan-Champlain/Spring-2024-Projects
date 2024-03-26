@@ -9,7 +9,8 @@ public class DeathScript : MonoBehaviour
     {
         if (collision.transform.tag == "Weapon")
         {
-            Object.Destroy(enemy);
+            Debug.Log("Hit!");
+            Destroy(gameObject);
         }
     }
 }

@@ -30,7 +30,6 @@ public class TVSwitch : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         Instructions.SetActive(false);
-        Action = false;
     }
     // Update is called once per frame
     void Update()

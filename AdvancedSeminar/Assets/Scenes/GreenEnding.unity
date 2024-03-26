@@ -718,7 +718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f977954b57e9b7439eeef16e854b6d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 4
   jumpKey: 32
   stepSounds: {fileID: 0}
   orientation: {fileID: 1957070463}
@@ -726,10 +726,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   jumpForce: 6
-  airMultiplier: 0.4
+  airMultiplier: 0
   jumpCooldown: 0.25
   readyToJump: 1
-  groundDrag: 3
+  groundDrag: 8
   playerHeight: 2
 --- !u!54 &229132162
 Rigidbody:

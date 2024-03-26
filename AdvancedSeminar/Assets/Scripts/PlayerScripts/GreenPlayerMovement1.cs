@@ -76,9 +76,11 @@ public class GreenPlayerMovement : MonoBehaviour
         if(grounded)
         {
             rb.drag = groundDrag;
+            airMultiplier = 0;
         }
         else if ( !grounded){
             rb.drag = 0;
+            airMultiplier = 0.25f;
         }
 
         if (isMoving == true)
@@ -92,7 +94,7 @@ public class GreenPlayerMovement : MonoBehaviour
         }
         isMovingCheck();
         MyInput();
-        SpeedControl();
+        //SpeedControl();
     }
 
     private void isMovingCheck()
@@ -164,7 +166,7 @@ public class GreenPlayerMovement : MonoBehaviour
         }
     }
 
-    private void SpeedControl()
+    /*private void SpeedControl()
     {
         Vector3 flatVel = new Vector3(rb.velocity.x, rb.velocity.z);
 
@@ -175,7 +177,7 @@ public class GreenPlayerMovement : MonoBehaviour
             
         }
         
-    }
+    }*/
 
     private void Jump()
     {
