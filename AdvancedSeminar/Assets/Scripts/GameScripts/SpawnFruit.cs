@@ -9,7 +9,10 @@ public class SpawnFruit : MonoBehaviour
     public Transform spawnPosition2;
     public Transform spawnPosition3;
     public Transform spawnPosition4;
-    public GameObject fruit;
+    public GameObject fruit1;
+    public GameObject fruit2;
+    public GameObject fruit3;
+    public GameObject fruit4;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,19 +24,19 @@ public class SpawnFruit : MonoBehaviour
         spawnChoice = Random.Range(1,4);
         if (spawnChoice == 1 )
         {
-            Instantiate(fruit, spawnPosition1.transform);
+            fruit1.SetActive(true);
         }
         else if (spawnChoice == 2 )
         {
-            Instantiate (fruit, spawnPosition2.transform);
+            fruit2.SetActive(true);
         }
         else if(spawnChoice == 3)
         {
-            Instantiate (fruit, spawnPosition3.transform);
+            fruit3.SetActive(true);
         }
         else if (spawnChoice == 4)
         {
-            Instantiate (fruit, spawnPosition4.transform);
+            fruit4.SetActive(true);
         }
     }
 }
