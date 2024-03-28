@@ -6,6 +6,7 @@ public class CourseStart : MonoBehaviour
 {
     public GameObject TimeKeeper;
     public GameObject player;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +16,22 @@ public class CourseStart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject == player)
+        {
+            TimeKeeper.GetComponent<Timer>().timeStart();
+            
+        }
+        else
+        {
+            
+            TimeKeeper.GetComponent<Timer>().resetTime();
+            
+        }
         
     }
 }
