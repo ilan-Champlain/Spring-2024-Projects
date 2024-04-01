@@ -10,6 +10,7 @@ public class TVSwitch : MonoBehaviour
     public GameObject player;
     public bool Action = false;
     public GameObject Article1;
+    public GameObject TV;
  
 
     // Start is called before the first frame update
@@ -42,7 +43,7 @@ public class TVSwitch : MonoBehaviour
                 
                 Action = false;
                 Article1.SetActive(true);
-                Invoke("ScreenOff", 10);
+                Invoke("ScreenOff", 15);
             }
         }
     }

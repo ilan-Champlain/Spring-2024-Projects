@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 7068643381694620182}
   - component: {fileID: 6725767310104303836}
   - component: {fileID: 4927514149361452235}
+  - component: {fileID: 1654176387374312064}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
@@ -317,6 +318,24 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.6
   m_Center: {x: 0, y: -0.0000014830161, z: 0.0000018074634}
+--- !u!114 &1654176387374312064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6456265697036894907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d39790738cc13134294dd159482769a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Instructions: {fileID: 0}
+  Trigger: {fileID: 0}
+  player: {fileID: 0}
+  Action: 0
+  Article1: {fileID: 0}
+  TV: {fileID: 0}
 --- !u!1 &7014734130743191081
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,7 +441,6 @@ GameObject:
   - component: {fileID: 9040186485967959715}
   - component: {fileID: 2979650783849384706}
   - component: {fileID: 730403323986385725}
-  - component: {fileID: 2166863716756634710}
   m_Layer: 0
   m_Name: TV
   m_TagString: Untagged
@@ -500,23 +518,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2166863716756634710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7822833842541483734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d39790738cc13134294dd159482769a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Instructions: {fileID: 0}
-  Trigger: {fileID: 0}
-  player: {fileID: 0}
-  Action: 0
-  Article1: {fileID: 0}
 --- !u!1 &9140676531440605152
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,8 @@ public class BuildingConstruction : MonoBehaviour
     public GameObject building;
     public AudioSource construction;
     public GameObject player;
+    public GameObject parrent;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,7 @@ public class BuildingConstruction : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision)
+        if (collision.transform.tag == "Player")
         {
             Instructions.SetActive(true);
             Action = true;
