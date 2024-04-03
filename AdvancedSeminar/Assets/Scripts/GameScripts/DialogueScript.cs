@@ -80,7 +80,7 @@ public class DialogueScript : MonoBehaviour
             Image4.SetActive(false);
             Image5.SetActive(true);
 
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Return))
             {
                 SceneManager.LoadScene("MainScene");
             }

@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: fb50b04369c0be043bc815a5e7a00754, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.56913537, g: 0.48360354, b: 0.42697266, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -604,7 +604,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 5, z: 2}
+  m_Size: {x: 2, y: 6, z: 2}
   m_Center: {x: 0.000000059604645, y: 4.440892e-16, z: -0.00000008940699}
 --- !u!95 &474520798
 Animator:
@@ -992,8 +992,8 @@ Transform:
   m_GameObject: {fileID: 819968217}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -50, y: 0.89, z: 1}
-  m_LocalScale: {x: 102.87, y: 2.3203, z: 1}
+  m_LocalPosition: {x: -33.7, y: 0.89, z: -3.3}
+  m_LocalScale: {x: 56.892513, y: 1.2832477, z: 0.5530525}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 572148769}
@@ -1563,7 +1563,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c181e71b6e68bb8459b78d9dc099d29c, type: 2}
+  - {fileID: 2100000, guid: 567699888a3b41f4aae64d20e7fbe0a8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2096,7 +2096,7 @@ Transform:
   m_GameObject: {fileID: 2024450345}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.009, y: 1.149, z: 0.259}
+  m_LocalPosition: {x: -0.009, y: 0.715, z: 0.259}
   m_LocalScale: {x: 0.82927, y: 0.52646244, z: 0.66549}
   m_ConstrainProportionsScale: 0
   m_Children: []
