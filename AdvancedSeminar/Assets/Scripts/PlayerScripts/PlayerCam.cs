@@ -6,7 +6,7 @@ public class PlayerCam : MonoBehaviour
 {
     public float sensX;
     public float sensY;
-
+    public GameObject EndQuestion;
     public Transform orientation;
 
     float xRotation;
@@ -33,7 +33,9 @@ public class PlayerCam : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            EndQuestion.SetActive(true);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
 
     }

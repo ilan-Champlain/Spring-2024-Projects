@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour
 {
     public GameObject FirstScene;
     public GameObject Menu;
+    public GameObject endMenu;
 
     void Start()
     {
@@ -20,6 +22,12 @@ public class StartMenu : MonoBehaviour
     public void StartGame()
     {
         FirstScene.SetActive(true);
+        Menu.SetActive(false);
+    }
+
+    public void endLoad()
+    {
+        endMenu.SetActive(true);
         Menu.SetActive(false);
     }
 }
