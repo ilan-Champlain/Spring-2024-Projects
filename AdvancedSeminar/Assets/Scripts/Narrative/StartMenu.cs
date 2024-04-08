@@ -12,6 +12,7 @@ public class StartMenu : MonoBehaviour
     void Start()
     {
         FirstScene.SetActive(false);
+        endMenu.SetActive(false);
     }
 
     public void QuitGame()

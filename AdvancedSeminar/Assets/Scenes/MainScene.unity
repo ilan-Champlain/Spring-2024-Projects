@@ -2533,7 +2533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3fab45e1865819428e24218c9a074b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4
+  moveSpeed: 6
   stepSounds: {fileID: 484502071}
   orientation: {fileID: 407035474}
 --- !u!114 &484502070

@@ -171,7 +171,7 @@ public class BluePlayerMovement : MonoBehaviour
         if(flatVel.magnitude > moveSpeed)
         {
             Vector3 limitedVel = flatVel.normalized * moveSpeed;
-            rb.velocity= new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
+            rb.velocity= new Vector3(limitedVel.x, rb.velocity.y, rb.velocity.z);
             
         }
         

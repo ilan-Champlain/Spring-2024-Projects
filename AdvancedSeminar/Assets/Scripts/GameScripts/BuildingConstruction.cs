@@ -13,6 +13,7 @@ public class BuildingConstruction : MonoBehaviour
     public AudioSource construction;
     public GameObject player;
     public GameObject parrent;
+    public int builtSections = 0;
 
     // Start is called before the first frame update
     void Start()

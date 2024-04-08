@@ -6,21 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Prologue Scene.unity
+    path: Assets/Scenes/Cutscenes/Prologue Scene.unity
     guid: 8e00777594a662f4389f304d86a28227
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/RedEnding.unity
+    path: Assets/Scenes/Endings Gameplay/RedEnding.unity
     guid: ad6917c3d52b1c343a6e7ac1ffdf6b3c
   - enabled: 1
-    path: Assets/Scenes/BlueEnding.unity
+    path: Assets/Scenes/Endings Gameplay/BlueEnding.unity
     guid: 172382f033d65824a9db2254833a314d
   - enabled: 1
-    path: Assets/Scenes/GreenEnding.unity
+    path: Assets/Scenes/Endings Gameplay/GreenEnding.unity
     guid: 9fe0af0e1f935154fa11df9c346f621b
   - enabled: 1
-    path: Assets/Scenes/HumanEnding.unity
+    path: Assets/Scenes/Endings Gameplay/HumanEnding.unity
     guid: 2a3b5ecc88f6ea04b8f0fe4a9a86994a
   m_configObjects: {}

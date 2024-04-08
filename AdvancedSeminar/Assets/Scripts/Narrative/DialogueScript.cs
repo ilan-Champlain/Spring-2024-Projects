@@ -73,7 +73,7 @@ public class DialogueScript : MonoBehaviour
             Line8.SetActive(true);
             Line7.SetActive(false);
         }
-        else
+        else if (dialogueLine == 9)
         {
             Line9.SetActive(true);
             Line8.SetActive(false);
@@ -82,6 +82,7 @@ public class DialogueScript : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Return))
             {
+                dialogueLine = 0;
                 SceneManager.LoadScene("MainScene");
             }
         }
