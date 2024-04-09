@@ -20,6 +20,7 @@ public class DialogueScript : MonoBehaviour
     public GameObject Line8;
     public GameObject Line9;
     GameObject currentLine;
+    public string sceneName;
 
     int dialogueLine = 1;
 
@@ -83,13 +84,13 @@ public class DialogueScript : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 dialogueLine = 0;
-                SceneManager.LoadScene("MainScene");
+                SceneManager.LoadScene(sceneName);
             }
         }
     }
 
     public void Skip()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene(sceneName);
     }
 }

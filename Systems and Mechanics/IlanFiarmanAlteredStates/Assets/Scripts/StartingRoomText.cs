@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class StartingRoomText : MonoBehaviour
 {
-    public GameObject textBox;
-    public int lineNumber;
+    public int lineNumber = 1;
     public GameObject centralChamber;
     public GameObject line1;
     public GameObject line2;
@@ -16,12 +15,32 @@ public class StartingRoomText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (lineNumber == 1)
+        {
+            line1.SetActive(true);
+        }
         
+        if (lineNumber == 2)
+        {
+            line1.SetActive(false);
+            line2.SetActive(true);
+        }
+        if (lineNumber == 3)
+        {
+            line3.SetActive(true);
+            line2.SetActive(false);
+        }
     }
 
     public void nextButton()
     {
-        
+        lineNumber++;
+
+        if (errorActive)
+        {
+            errorActive = false;
+            errorText.SetActive(false);
+        }
     }
     public void moveButton() 
     {
@@ -43,6 +62,7 @@ public class StartingRoomText : MonoBehaviour
 
     public void useButton()
     {
-
+        errorText.SetActive(true);
+        errorActive = true;
     }
 }

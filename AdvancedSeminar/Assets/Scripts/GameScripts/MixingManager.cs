@@ -170,22 +170,22 @@ public class MixingManager : MonoBehaviour
         
         if (redCount > blueCount && redCount > greenCount) 
         {
-            SceneManager.LoadScene("RedEnding");
+            SceneManager.LoadScene("ChapterRed");
         }
 
         else if (blueCount > redCount && blueCount > greenCount)
         {
-            SceneManager.LoadScene("BlueEnding");
+            SceneManager.LoadScene("ChapterBlue");
         }
 
         else if (greenCount > blueCount && greenCount > redCount)
         {
-            SceneManager.LoadScene("GreenEnding");
+            SceneManager.LoadScene("ChapterGreen");
         }
 
         else
         {
-            SceneManager.LoadScene("HumanEnding");
+            SceneManager.LoadScene("ChapterHuman");
         }
     }
 
