@@ -33,7 +33,7 @@ public class Timer : MonoBehaviour
         }
         
         timeText.text = currentTime.ToString();
-        bTimeText.text = currentTime.ToString();
+        bTimeText.text = bestTime.ToString();
     }
 
     public void timeStart()
@@ -42,14 +42,19 @@ public class Timer : MonoBehaviour
         Debug.Log(startTime);
     }
 
-    public void resetTime()
+    public void bestRun()
     {
-        startTime = false;
-        Debug.Log(startTime);
+        
         if (currentTime < bestTime)
         {
             bestTime = currentTime;
         }
+    }
+
+    public void resetTime()
+    {
+        startTime = false;
+        currentTime = 0;
 
     }
 }

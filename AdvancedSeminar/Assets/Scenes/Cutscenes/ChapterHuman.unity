@@ -141,16 +141,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1284347205542474980, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 30.622986
+      value: 30.623047
       objectReference: {fileID: 0}
     - target: {fileID: 1284347205542474980, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -252.7
+      value: -252.70001
       objectReference: {fileID: 0}
     - target: {fileID: 2018189622395328113, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
       propertyPath: m_text
       value: They may be, a true second chance.
       objectReference: {fileID: 0}
+    - target: {fileID: 2104302567403399806, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f881e36e00f7ed647b4d7906007d025b, type: 3}
     - target: {fileID: 2123924448817128484, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -263,6 +267,10 @@ PrefabInstance:
       propertyPath: sceneName
       value: HumanEnding
       objectReference: {fileID: 0}
+    - target: {fileID: 6465468817588769197, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 49d40848feafe7240a412aa624ad0f68, type: 3}
     - target: {fileID: 7165173027599148259, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
       propertyPath: m_Name
       value: DialogueUI

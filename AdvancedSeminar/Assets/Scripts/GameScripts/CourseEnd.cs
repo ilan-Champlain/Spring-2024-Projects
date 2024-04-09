@@ -12,7 +12,8 @@ public class CourseEnd : MonoBehaviour
     {
         if (collision.gameObject == player)
         {
-            TimeKeeper.GetComponent<Timer>().resetTime();
+            
+            TimeKeeper.GetComponent<Timer>().bestRun();
             player.GetComponent<EndPlayerMovement>().enabled = false;
             Invoke("reRun", 4);
             

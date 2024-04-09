@@ -404,6 +404,10 @@ PrefabInstance:
       propertyPath: sceneName
       value: RedEnding
       objectReference: {fileID: 0}
+    - target: {fileID: 6465468817588769197, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f044e9509916fc14793881e1e773fd07, type: 3}
     - target: {fileID: 7165173027599148259, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
       propertyPath: m_Name
       value: DialogueUI

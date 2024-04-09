@@ -19,6 +19,11 @@ public class CourseStart : MonoBehaviour
         
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        TimeKeeper.GetComponent<Timer>().resetTime();
+    }
+
     private void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject == player)
