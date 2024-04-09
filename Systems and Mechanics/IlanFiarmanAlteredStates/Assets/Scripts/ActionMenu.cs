@@ -7,10 +7,12 @@ public class ActionMenu : MonoBehaviour
 {
     public GameObject ThisMenu;
     public bool keyAvailable = false;
+    public bool interactAvailable = false;
     public GameObject key;
     public GameObject finalChamber;
     public GameObject leftChamber;
     public GameObject moveMenu;
+    public GameObject RoomText;
 
     // Update is called once per frame
     void Update()
@@ -26,7 +28,10 @@ public class ActionMenu : MonoBehaviour
 
     public void InteractButton()
     {
-
+        if (interactAvailable == false)
+        {
+            RoomText.GetComponent<RoomText>().errorActive = true;
+        }
     }
 
     public void TakeButton()
@@ -35,6 +40,11 @@ public class ActionMenu : MonoBehaviour
         {
             key.SetActive(true);
         }
+
+        else if (keyAvailable == false)
+        {
+            RoomText.GetComponent<RoomText>().errorActive = true;
+        }
     }
 
     public void UseButton()
@@ -42,6 +52,10 @@ public class ActionMenu : MonoBehaviour
         if (key && finalChamber)
         {
             SceneManager.LoadScene("WinScene");
+        }
+        else
+        {
+            RoomText.GetComponent<RoomText>().errorActive = true;
         }
     }
 }

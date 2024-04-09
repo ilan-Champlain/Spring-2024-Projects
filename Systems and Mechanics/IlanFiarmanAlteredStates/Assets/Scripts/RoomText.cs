@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StartingRoomText : MonoBehaviour
+public class RoomText : MonoBehaviour
 {
     public int lineNumber = 1;
-    public GameObject centralChamber;
+    
     public GameObject line1;
     public GameObject line2;
     public GameObject line3;
@@ -41,28 +41,5 @@ public class StartingRoomText : MonoBehaviour
             errorActive = false;
             errorText.SetActive(false);
         }
-    }
-    public void moveButton() 
-    {
-        this.gameObject.SetActive(false);
-        centralChamber.SetActive(true);
-    }
-
-    public void interactButton()
-    {
-        errorText.SetActive(true);
-        errorActive = true;
-    }
-
-    public void takeButton()
-    {
-        errorText.SetActive(true);
-        errorActive = true;
-    }
-
-    public void useButton()
-    {
-        errorText.SetActive(true);
-        errorActive = true;
     }
 }
