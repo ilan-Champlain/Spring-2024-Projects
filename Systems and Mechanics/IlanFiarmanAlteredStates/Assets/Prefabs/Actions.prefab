@@ -120,7 +120,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2752787540454341016}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7714264422034515659}
+        m_TargetAssemblyTypeName: ActionMenu, Assembly-CSharp
+        m_MethodName: MoveButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &50309416532946834
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,7 +521,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4867185238718125962}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7714264422034515659}
+        m_TargetAssemblyTypeName: ActionMenu, Assembly-CSharp
+        m_MethodName: InteractButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1735935240141169044
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,7 +654,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5785302265829117940}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7714264422034515659}
+        m_TargetAssemblyTypeName: ActionMenu, Assembly-CSharp
+        m_MethodName: UseButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2685179440833870710
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,10 +761,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThisMenu: {fileID: 2685179440833870710}
   keyAvailable: 0
+  interactAvailable: 0
+  interactPressed: 0
   key: {fileID: 0}
   finalChamber: {fileID: 0}
   leftChamber: {fileID: 0}
   moveMenu: {fileID: 0}
+  RoomText: {fileID: 0}
 --- !u!1 &7461224016455759314
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,7 +1022,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8561128793878939088}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7714264422034515659}
+        m_TargetAssemblyTypeName: ActionMenu, Assembly-CSharp
+        m_MethodName: TakeButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8410476895731228919
 GameObject:
   m_ObjectHideFlags: 0

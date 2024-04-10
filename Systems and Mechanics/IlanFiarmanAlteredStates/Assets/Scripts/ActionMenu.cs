@@ -8,6 +8,7 @@ public class ActionMenu : MonoBehaviour
     public GameObject ThisMenu;
     public bool keyAvailable = false;
     public bool interactAvailable = false;
+    public bool interactPressed;
     public GameObject key;
     public GameObject finalChamber;
     public GameObject leftChamber;
@@ -28,6 +29,7 @@ public class ActionMenu : MonoBehaviour
 
     public void InteractButton()
     {
+        interactPressed = true;
         if (interactAvailable == false)
         {
             RoomText.GetComponent<RoomText>().errorActive = true;
