@@ -24,6 +24,7 @@ public class NumberPuzzle : MonoBehaviour
 
     void Start()
     {
+        thisMenu.SetActive(false);
     }
 
     void Update()
