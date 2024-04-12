@@ -5,16 +5,26 @@ using UnityEngine;
 public class KeyDetector : MonoBehaviour
 {
     public GameObject key;
+    public GameObject childKey;
     public GameObject ActionMenu;
+    public GameObject puzzleMenu;
 
+    void Start()
+    {
+        key.SetActive(false);
+        childKey.SetActive(false);
+    }
     // Update is called once per frame
     void Update()
     {
         if (key)
         {
             ActionMenu.GetComponent<ActionMenu>().keyAvailable = true;
-            
-
+            if (puzzleMenu.GetComponent<NumberPuzzle>().puzzleComplete == true )
+            {
+                childKey.SetActive(true);
+            }
         }
+        
     }
 }

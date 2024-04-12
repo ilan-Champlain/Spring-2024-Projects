@@ -905,7 +905,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 69
+  m_fontSize: 54.75
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1951,7 +1951,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 43.95
+  m_fontSize: 32.9
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3685,8 +3685,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f45dd4e9009d73b44978b02fbf3f5bcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 2054585871}
+  key: {fileID: 1972764211}
+  childKey: {fileID: 2054585871}
   ActionMenu: {fileID: 327562008}
+  puzzleMenu: {fileID: 2030341099}
 --- !u!1001 &707072448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6230,7 +6232,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.1
+  m_fontSize: 26.25
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7674,7 +7676,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2462917366480602916, guid: 8306ab607f841c3418aeb20c00d42fac, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 40.6987
+      value: 148.83
       objectReference: {fileID: 0}
     - target: {fileID: 2462917366480602916, guid: 8306ab607f841c3418aeb20c00d42fac, type: 3}
       propertyPath: m_SizeDelta.y
@@ -7710,7 +7712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2462917366480602916, guid: 8306ab607f841c3418aeb20c00d42fac, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 128.47919
+      value: 74.414
       objectReference: {fileID: 0}
     - target: {fileID: 2462917366480602916, guid: 8306ab607f841c3418aeb20c00d42fac, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -10635,7 +10637,7 @@ GameObject:
   - component: {fileID: 1972764214}
   - component: {fileID: 1972764213}
   m_Layer: 5
-  m_Name: Key
+  m_Name: RewardKey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12078,6 +12080,7 @@ MonoBehaviour:
   rightChamber: {fileID: 978770452}
   finalChamber: {fileID: 994638603}
   centralChamber: {fileID: 2079915625}
+  MovedToFinalChamber: 0
   thisMenu: {fileID: 2146839104}
   actionUI: {fileID: 2436808241791788590}
 --- !u!1001 &2436808241791788588

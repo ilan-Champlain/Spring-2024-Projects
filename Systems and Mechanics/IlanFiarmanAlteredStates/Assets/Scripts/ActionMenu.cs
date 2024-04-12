@@ -22,24 +22,11 @@ public class ActionMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (leftChamber == true)
+        if (moveMenu.GetComponent<MoveUIMenu>().MovedToFinalChamber == true)
         {
-            interactAvailable = true;
-        }
-        if (rightChamber == true)
-        {
-            interactAvailable = true;
-        }
-        if (finalChamber == true)
-        {
-            interactAvailable = true;
             finalActive = true;
         }
 
-        else
-        {
-            interactAvailable = false;
-        }
     }
 
     public void MoveButton()
@@ -56,7 +43,7 @@ public class ActionMenu : MonoBehaviour
 
     public void TakeButton()
     {
-        if (keyAvailable)
+        if (keyAvailable ==true)
         {
             key.SetActive(true);
         }

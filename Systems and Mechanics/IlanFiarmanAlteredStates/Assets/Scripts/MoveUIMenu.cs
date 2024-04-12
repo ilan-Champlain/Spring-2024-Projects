@@ -9,7 +9,7 @@ public class MoveUIMenu : MonoBehaviour
     public GameObject rightChamber;
     public GameObject finalChamber;
     public GameObject centralChamber;
-
+    public bool MovedToFinalChamber;
     public GameObject thisMenu;
     public GameObject actionUI;
 
@@ -22,6 +22,7 @@ public class MoveUIMenu : MonoBehaviour
         finalChamber.SetActive (false);
         actionUI.SetActive(true);
         thisMenu.SetActive (false);
+        MovedToFinalChamber = false;
     }
 
     public void centralMove ()
@@ -33,6 +34,7 @@ public class MoveUIMenu : MonoBehaviour
         finalChamber.SetActive(false);
         actionUI.SetActive(true);
         thisMenu.SetActive(false);
+        MovedToFinalChamber = false;
     }
 
     public void rightMove ()
@@ -44,6 +46,7 @@ public class MoveUIMenu : MonoBehaviour
         startScene.SetActive(false);
         actionUI.SetActive(true);
         thisMenu.SetActive(false);
+        MovedToFinalChamber=false;
     }
 
     public void finalMove ()
@@ -55,7 +58,7 @@ public class MoveUIMenu : MonoBehaviour
         startScene.SetActive(false);
         actionUI.SetActive(true);
         thisMenu.SetActive(false);
-        actionUI.GetComponent<ActionMenu>().finalActive = true;
+        MovedToFinalChamber=true;
     }
 
     public void leftMove ()
@@ -67,6 +70,7 @@ public class MoveUIMenu : MonoBehaviour
         finalChamber.SetActive(false);
         actionUI.SetActive(true);
         thisMenu.SetActive(false);
+        MovedToFinalChamber =false;
     }
 
     public void closeMenu()
