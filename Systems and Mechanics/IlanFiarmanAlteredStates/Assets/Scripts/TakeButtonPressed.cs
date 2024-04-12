@@ -10,9 +10,10 @@ public class TakeButtonPressed : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ButtonMenu.GetComponent<ActionMenu>().takePressed == true)
+        /*if (ButtonMenu.GetComponent<ActionMenu>().takePressed == true)
         {
+            
             Taking.SetActive(true);
-        }
+        }*/
     }
 }

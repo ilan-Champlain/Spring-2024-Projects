@@ -32,13 +32,18 @@ public class RoomText : MonoBehaviour
             line3.SetActive(true);
             line2.SetActive(false);
         }
-        if (errorActive)
+        /*if (errorActive)
         {
             lineNumber = 0;
             line1.SetActive(false);
             line2.SetActive(false);
             line3.SetActive(false);
             errorText.SetActive(true);
+        }*/
+        if (lineNumber >= 4)
+        {
+            line3.SetActive(false);
+            lineNumber = 1;
         }
     }
 

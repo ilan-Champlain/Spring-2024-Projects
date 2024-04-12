@@ -55,6 +55,7 @@ public class MoveUIMenu : MonoBehaviour
         startScene.SetActive(false);
         actionUI.SetActive(true);
         thisMenu.SetActive(false);
+        actionUI.GetComponent<ActionMenu>().finalActive = true;
     }
 
     public void leftMove ()

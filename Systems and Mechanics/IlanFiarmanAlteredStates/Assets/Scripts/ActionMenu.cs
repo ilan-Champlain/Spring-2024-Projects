@@ -7,6 +7,7 @@ public class ActionMenu : MonoBehaviour
 {
     public GameObject ThisMenu;
     public bool keyAvailable = false;
+    public bool finalActive = false;
     public bool interactAvailable;
     public bool interactPressed;
     public bool takePressed;
@@ -32,6 +33,7 @@ public class ActionMenu : MonoBehaviour
         if (finalChamber == true)
         {
             interactAvailable = true;
+            finalActive = true;
         }
 
         else
@@ -64,7 +66,7 @@ public class ActionMenu : MonoBehaviour
 
     public void UseButton()
     {
-        if (key && finalChamber)
+        if (keyAvailable == true && finalActive == true)
         {
             SceneManager.LoadScene("WinScene");
         }

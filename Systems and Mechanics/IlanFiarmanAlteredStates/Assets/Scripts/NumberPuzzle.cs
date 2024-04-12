@@ -22,6 +22,7 @@ public class NumberPuzzle : MonoBehaviour
     public TextMeshProUGUI num6;
     public GameObject actionMenu;
     public bool puzzleComplete = false;
+    public GameObject keyImage;
 
     void Start()
     {
@@ -38,6 +39,7 @@ public class NumberPuzzle : MonoBehaviour
         {
             actionMenu.GetComponent<ActionMenu>().keyAvailable = true;
             puzzleComplete = true;
+            keyImage.SetActive(true);
         }
         else
         {
