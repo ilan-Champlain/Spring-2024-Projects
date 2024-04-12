@@ -7,6 +7,7 @@ using UnityEngine;
 public class NumberPuzzle : MonoBehaviour
 {
     public GameObject thisMenu;
+    public GameObject thisChamber;
     public int firstNumber;
     public int secondNumber;
     public int thirdNumber;
@@ -24,11 +25,15 @@ public class NumberPuzzle : MonoBehaviour
 
     void Start()
     {
-        thisMenu.SetActive(false);
+        //thisMenu.SetActive(false);
     }
 
     void Update()
     {
+        if (thisMenu)
+        {
+            actionMenu.GetComponent<ActionMenu>().interactPressed = false;
+        }
         if (firstNumber == 4 && secondNumber == 6 && thirdNumber == 9 && fourthNumber == 8 && fifthNumber == 2 && sixthNumber == 0)
         {
             actionMenu.GetComponent<ActionMenu>().keyAvailable = true;
@@ -43,7 +48,7 @@ public class NumberPuzzle : MonoBehaviour
 
     public void closeMenu()
     {
-        this.thisMenu.SetActive(false);
+        thisMenu.SetActive(false);
     }
 
     public void firstNumButton()

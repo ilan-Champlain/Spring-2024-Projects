@@ -10,7 +10,9 @@ public class RoomText : MonoBehaviour
     public GameObject line2;
     public GameObject line3;
     public GameObject errorText;
+    public GameObject errorTrigger;
     public bool errorActive = false;
+    
 
     // Update is called once per frame
     void Update()
@@ -30,16 +32,27 @@ public class RoomText : MonoBehaviour
             line3.SetActive(true);
             line2.SetActive(false);
         }
+        if (errorActive)
+        {
+            lineNumber = 0;
+            line1.SetActive(false);
+            line2.SetActive(false);
+            line3.SetActive(false);
+            errorText.SetActive(true);
+        }
     }
 
     public void nextButton()
     {
         lineNumber++;
-
-        if (errorActive)
+        if (errorActive == true)
         {
             errorActive = false;
+            lineNumber = 1;
+            errorTrigger.SetActive(false);
             errorText.SetActive(false);
+            errorActive = false;
         }
+        
     }
 }

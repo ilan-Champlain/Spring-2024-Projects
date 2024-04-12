@@ -16,13 +16,13 @@ public class StartingMenu : MonoBehaviour
 
     public void buttonTutorial()
     {
-        this.tutorialMenu.SetActive(false);
+        this.gameObject.SetActive(false);
         tutorialMenu.SetActive(true);
     }
 
     public void beginGame()
     {
-        SceneManager.LoadScene("StartingChamber");
+        SceneManager.LoadScene("MainScene");
     }
 
     public void quitGame()

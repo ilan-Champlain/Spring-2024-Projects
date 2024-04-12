@@ -2,18 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractButtonPress : MonoBehaviour
+public class UseButtonPressed : MonoBehaviour
 {
     public GameObject ButtonMenu;
-    public GameObject interactable;
+    public GameObject Using;
 
     // Update is called once per frame
     void Update()
     {
-
-        if (ButtonMenu.GetComponent<ActionMenu>().interactPressed == true )
+        if (ButtonMenu.GetComponent<ActionMenu>().usePressed == true)
         {
-            interactable.SetActive(true);
+            Using.SetActive(true);
         }
     }
 }
