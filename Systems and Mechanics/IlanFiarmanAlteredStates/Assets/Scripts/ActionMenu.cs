@@ -38,7 +38,7 @@ public class ActionMenu : MonoBehaviour
     public void InteractButton()
     {
         interactPressed = true;
-        
+        Invoke("resetPress", 1);
     }
 
     public void TakeButton()
@@ -62,5 +62,10 @@ public class ActionMenu : MonoBehaviour
             usePressed = true;
         }
         
+    }
+
+    void resetPress()
+    {
+        interactPressed=false;
     }
 }
