@@ -7,7 +7,7 @@ using UnityEngine;
 public class NumberPuzzle : MonoBehaviour
 {
     public GameObject thisMenu;
-    public GameObject thisChamber;
+    public GameObject Inventory;
     public int firstNumber;
     public int secondNumber;
     public int thirdNumber;
@@ -38,8 +38,10 @@ public class NumberPuzzle : MonoBehaviour
         if (firstNumber == 4 && secondNumber == 6 && thirdNumber == 9 && fourthNumber == 8 && fifthNumber == 2 && sixthNumber == 0)
         {
             actionMenu.GetComponent<ActionMenu>().keyAvailable = true;
+            
             puzzleComplete = true;
             keyImage.SetActive(true);
+            Inventory.GetComponent<KeyDetector>().keyObtained = true;
         }
         else
         {

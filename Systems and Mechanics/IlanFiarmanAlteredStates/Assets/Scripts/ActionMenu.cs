@@ -32,7 +32,7 @@ public class ActionMenu : MonoBehaviour
     public void MoveButton()
     {
         moveMenu.SetActive(true);
-        this.ThisMenu.SetActive(false);
+        //this.ThisMenu.SetActive(false);
     }
 
     public void InteractButton()
@@ -49,6 +49,7 @@ public class ActionMenu : MonoBehaviour
         }
 
         takePressed = true;
+        Invoke("resetPress", 1);
     }
 
     public void UseButton()
@@ -61,11 +62,14 @@ public class ActionMenu : MonoBehaviour
         {
             usePressed = true;
         }
+        Invoke("resetPress", 1);
         
     }
 
     void resetPress()
     {
         interactPressed=false;
+        takePressed=false;
+        usePressed = false;
     }
 }

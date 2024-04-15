@@ -5,6 +5,7 @@ using UnityEngine;
 public class KeyDetector : MonoBehaviour
 {
     public GameObject key;
+    public bool keyObtained = false;
     public GameObject childKey;
     public GameObject ActionMenu;
     public GameObject puzzleMenu;
@@ -17,7 +18,7 @@ public class KeyDetector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (key)
+        if (keyObtained == true)
         {
             ActionMenu.GetComponent<ActionMenu>().keyAvailable = true;
             if (puzzleMenu.GetComponent<NumberPuzzle>().puzzleComplete == true )
