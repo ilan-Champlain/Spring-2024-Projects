@@ -8,6 +8,7 @@ public class BluePlayerMovement : MonoBehaviour
 
     [Header("Movement")]
     public float moveSpeed;
+    public GameObject endQuestion;
 
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
@@ -70,7 +71,7 @@ public class BluePlayerMovement : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape)){
-            Application.Quit();
+            endQuestion.SetActive(true);
         }
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
         if(grounded)

@@ -13,6 +13,7 @@ public class CollectingFruit : MonoBehaviour
         if(other.transform.tag == "Fruit")
         {
             other.gameObject.SetActive(false);
+            this.gameObject.GetComponent<EndingFinishedCondition>().winScore++;
             Canvas.GetComponent<FruitCollection>().fruitGained();
             spawnFruit.GetComponent<SpawnFruit>().fruitSpawn();
         }

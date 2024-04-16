@@ -37,7 +37,7 @@ public class RedPlayerMovement : MonoBehaviour
     [Header("Ground Check")]
     
     bool grounded;
-    
+    public GameObject endQuestion;
     public float playerHeight;
 
     Vector3 moveDirection;
@@ -70,7 +70,7 @@ public class RedPlayerMovement : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape)){
-            Application.Quit();
+            endQuestion.SetActive(true);
         }
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
         if(grounded)

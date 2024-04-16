@@ -12505,6 +12505,7 @@ GameObject:
   - component: {fileID: 1011427063}
   - component: {fileID: 1011427070}
   - component: {fileID: 1011427069}
+  - component: {fileID: 1011427071}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -12711,6 +12712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
+  endQuestion: {fileID: 5737740433154998887}
   jumpKey: 0
   stepSounds: {fileID: 1011427063}
   orientation: {fileID: 537612399}
@@ -12750,6 +12752,21 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 64
   m_CollisionDetection: 1
+--- !u!114 &1011427071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011427061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b395d9a24de2646ad1413fe1580cda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endQuestion: {fileID: 5737740433154998887}
+  winConditionNumber: 7
+  winScore: 0
 --- !u!1 &1015668004
 GameObject:
   m_ObjectHideFlags: 0
@@ -13088,6 +13105,14 @@ PrefabInstance:
     - target: {fileID: 4288362814117707242, guid: 554b019c4078d244aaae9d466d18ed44, type: 3}
       propertyPath: m_Name
       value: Building1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063951186466950158, guid: 554b019c4078d244aaae9d466d18ed44, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157708301062880102, guid: 554b019c4078d244aaae9d466d18ed44, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18839,6 +18864,14 @@ PrefabInstance:
     - target: {fileID: 4288362814117707242, guid: 554b019c4078d244aaae9d466d18ed44, type: 3}
       propertyPath: m_Name
       value: Building1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063951186466950158, guid: 554b019c4078d244aaae9d466d18ed44, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157708301062880102, guid: 554b019c4078d244aaae9d466d18ed44, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30716,6 +30749,14 @@ PrefabInstance:
     - target: {fileID: 4288362814117707242, guid: 554b019c4078d244aaae9d466d18ed44, type: 3}
       propertyPath: m_Name
       value: Building1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063951186466950158, guid: 554b019c4078d244aaae9d466d18ed44, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157708301062880102, guid: 554b019c4078d244aaae9d466d18ed44, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

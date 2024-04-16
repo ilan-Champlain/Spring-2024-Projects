@@ -5,8 +5,9 @@ using UnityEngine;
 public class WeaponSwing : MonoBehaviour
 {
     public GameObject hammer;
-
-    bool canKill = false;
+    
+    public GameObject animationScript;
+    public bool canKill = false;
 
     // Update is called once per frame
     void Update()
@@ -31,10 +32,14 @@ public class WeaponSwing : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy" && canKill)
         {
-            Destroy(other.gameObject);
-            canKill=false;
+            //animationScript.GetComponent<AllyAnimationTransition>().enemyIsSlain = true;
+            Destroy(other.gameObject, 0.3f);
+            canKill =false;
+            this.gameObject.GetComponent<EndingFinishedCondition>().winScore++;
         }
     }
+
+
 
     public void killReset()
     {

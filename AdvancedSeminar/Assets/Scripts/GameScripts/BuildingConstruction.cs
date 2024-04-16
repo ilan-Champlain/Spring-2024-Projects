@@ -57,6 +57,7 @@ public class BuildingConstruction : MonoBehaviour
 
     void CompleteConstruct()
     {
+        player.GetComponent<EndingFinishedCondition>().winScore++;
         building.SetActive(true);
         buildHider.SetActive(false);
     }

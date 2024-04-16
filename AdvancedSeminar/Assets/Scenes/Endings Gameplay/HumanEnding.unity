@@ -1754,6 +1754,7 @@ GameObject:
   - component: {fileID: 1072013871}
   - component: {fileID: 1072013870}
   - component: {fileID: 1072013876}
+  - component: {fileID: 1072013877}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1999,6 +2000,21 @@ MonoBehaviour:
   readyToJump: 0
   groundDrag: 4
   playerHeight: 2
+--- !u!114 &1072013877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072013868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b395d9a24de2646ad1413fe1580cda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endQuestion: {fileID: 1643882364}
+  winConditionNumber: 4
+  winScore: 0
 --- !u!1 &1084128321
 GameObject:
   m_ObjectHideFlags: 0

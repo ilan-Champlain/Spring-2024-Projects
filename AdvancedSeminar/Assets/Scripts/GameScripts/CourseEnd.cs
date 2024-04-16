@@ -15,6 +15,7 @@ public class CourseEnd : MonoBehaviour
             
             TimeKeeper.GetComponent<Timer>().bestRun();
             player.GetComponent<EndPlayerMovement>().enabled = false;
+            player.GetComponent<EndingFinishedCondition>().winScore++;
             Invoke("reRun", 4);
             
         }
