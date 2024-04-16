@@ -242,7 +242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3589188332688894985, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
       propertyPath: m_text
-      value: 
+      value: 'We now join the newest great Empire: The Cothorins in their great '
       objectReference: {fileID: 0}
     - target: {fileID: 4303847874418448218, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
       propertyPath: m_text

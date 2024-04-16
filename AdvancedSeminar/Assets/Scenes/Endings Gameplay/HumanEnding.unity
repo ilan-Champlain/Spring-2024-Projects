@@ -2047,7 +2047,7 @@ MonoBehaviour:
   timeText: {fileID: 214258681}
   bTimeText: {fileID: 1840581860}
   currentTime: 0
-  bestTime: 0
+  bestTime: 20
   countDown: 0
   startTime: 0
 --- !u!4 &1084128323

@@ -42,10 +42,11 @@ public class DialogueScript : MonoBehaviour
             Image1.SetActive(false);
             Image2.SetActive(true);
         }
-        else if (dialogueLine == 3) {
+        else if (dialogueLine == 3)
+        {
             Line3.SetActive(true);
             Line2.SetActive(false);
-            
+
         }
         else if (dialogueLine == 4)
         {
@@ -54,13 +55,15 @@ public class DialogueScript : MonoBehaviour
             Image2.SetActive(false);
             Image3.SetActive(true);
         }
-        else if (dialogueLine == 5) {
+        else if (dialogueLine == 5)
+        {
             Line5.SetActive(true);
             Line4.SetActive(false);
             Image3.SetActive(false);
             Image4.SetActive(true);
         }
-        else if (dialogueLine == 6) {
+        else if (dialogueLine == 6)
+        {
             Line6.SetActive(true);
             Line5.SetActive(false);
         }
@@ -80,13 +83,13 @@ public class DialogueScript : MonoBehaviour
             Line8.SetActive(false);
             Image4.SetActive(false);
             Image5.SetActive(true);
-
-            if (Input.GetKeyDown(KeyCode.Return))
-            {
+        }
+        else if (dialogueLine == 9)
+        {
                 dialogueLine = 0;
                 SceneManager.LoadScene(sceneName);
-            }
         }
+        
     }
 
     public void Skip()

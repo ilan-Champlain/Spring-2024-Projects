@@ -412,6 +412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueUI
       objectReference: {fileID: 0}
+    - target: {fileID: 9214762553930923664, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_text
+      value: Time will tell the fate of these new barbarians of Old Earth.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
