@@ -23,4 +23,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Endings Gameplay/HumanEnding.unity
     guid: 2a3b5ecc88f6ea04b8f0fe4a9a86994a
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/ChapterBlue.unity
+    guid: 2e8fa6b7a47a532438923f7b311eb357
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/ChapterGreen.unity
+    guid: f984e066c23e5d84cb0a630b9239723f
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/ChapterHuman.unity
+    guid: 02fbc6f319f3eca4e9d5f8fe2c3f1c6e
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/ChapterRed.unity
+    guid: c7288071abdd7cc4597b92ba21f071f8
   m_configObjects: {}

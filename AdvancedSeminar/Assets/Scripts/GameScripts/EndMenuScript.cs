@@ -17,18 +17,18 @@ public class EndMenuScript : MonoBehaviour
 
     public void redLoad()
     {
-        SceneManager.LoadScene("RedEnding");
+        SceneManager.LoadScene("ChapterRed");
     }
     public void greenLoad()
     {
-        SceneManager.LoadScene("GreenEnding");
+        SceneManager.LoadScene("ChapterGreen");
     }
     public void blueLoad()
     {
-        SceneManager.LoadScene("BlueEnding");
+        SceneManager.LoadScene("ChapterBlue");
     }
     public void hLoad()
     {
-        SceneManager.LoadScene("HumanEnding");
+        SceneManager.LoadScene("ChapterHuman");
     }
 }

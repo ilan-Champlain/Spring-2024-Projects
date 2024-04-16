@@ -17,7 +17,6 @@ public class AllyAnimationTransition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(enemyIsSlain);
         if (enemyIsSlain == true)
         {
             animator.SetBool("IsEnemySlain", true);

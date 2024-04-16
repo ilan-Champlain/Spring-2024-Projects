@@ -131,21 +131,53 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2049046788}
     m_Modifications:
+    - target: {fileID: 239423852202539902, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 239423852202539902, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 239423852202539902, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 239423852202539902, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284347205542474980, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.93700004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284347205542474980, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.2227838
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284347205542474980, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.10950037
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284347205542474980, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.10251352
+      objectReference: {fileID: 0}
     - target: {fileID: 1284347205542474980, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -233.08
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1284347205542474980, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -724.06
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1284347205542474980, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 30.623047
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1284347205542474980, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -252.70001
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2018189622395328113, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
       propertyPath: m_text
@@ -240,9 +272,73 @@ PrefabInstance:
       value: They now live in the remnants of old Earth cities, though unable to
         use their predecessor's ruined technology.
       objectReference: {fileID: 0}
+    - target: {fileID: 2811599338559128413, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811599338559128413, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811599338559128413, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811599338559128413, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149318642251955070, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149318642251955070, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149318642251955070, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149318642251955070, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3589188332688894985, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
       propertyPath: m_text
       value: 'We now join the newest great Empire: The Cothorins in their great '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3699978424037760385, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3699978424037760385, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3699978424037760385, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3699978424037760385, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276817835353901870, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276817835353901870, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276817835353901870, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276817835353901870, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4303847874418448218, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
       propertyPath: m_text
@@ -263,6 +359,22 @@ PrefabInstance:
       propertyPath: m_text
       value: In the wake of Dr. Morinot's generational sacrifice, humanity was saved.
       objectReference: {fileID: 0}
+    - target: {fileID: 5909726920446296124, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909726920446296124, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909726920446296124, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909726920446296124, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6322588305384334407, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
       propertyPath: sceneName
       value: HumanEnding
@@ -271,9 +383,57 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 49d40848feafe7240a412aa624ad0f68, type: 3}
+    - target: {fileID: 6577250841549304129, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577250841549304129, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577250841549304129, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577250841549304129, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7084687518742578215, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7084687518742578215, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7084687518742578215, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7084687518742578215, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7165173027599148259, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
       propertyPath: m_Name
       value: DialogueUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 8800625441987159406, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8800625441987159406, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8800625441987159406, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8800625441987159406, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9214762553930923664, guid: 9f669a887431c5047930e77f2ecdfb16, type: 3}
       propertyPath: m_text
