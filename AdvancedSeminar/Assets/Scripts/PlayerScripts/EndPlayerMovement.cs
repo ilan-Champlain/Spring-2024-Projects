@@ -84,12 +84,12 @@ public class EndPlayerMovement : MonoBehaviour
 
         if (isMoving == true)
         {
-            //stepSounds.enabled = true;
+            stepSounds.enabled = true;
         }
 
         else
         {
-            //stepSounds.enabled = false;
+            stepSounds.enabled = false;
         }
         isMovingCheck();
         MyInput();
