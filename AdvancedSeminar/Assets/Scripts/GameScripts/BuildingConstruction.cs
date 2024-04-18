@@ -51,6 +51,7 @@ public class BuildingConstruction : MonoBehaviour
                 Action = false;
                 buildHider.SetActive(true);
                 Invoke("CompleteConstruct", 5);
+                construction.Play();
             }
         }
     }

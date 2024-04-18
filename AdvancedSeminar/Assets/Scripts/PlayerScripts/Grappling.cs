@@ -13,6 +13,7 @@ public class Grappling : MonoBehaviour
     public Transform player;
     public float maxDistance = 100f;
     private SpringJoint joint;
+    public AudioSource RopeSound;
 
 
     void Awake() {
@@ -61,6 +62,8 @@ public class Grappling : MonoBehaviour
             joint.massScale = 4.5f;
 
             lr.positionCount = 2;
+
+            RopeSound.Play();
         }
     }
 
@@ -74,6 +77,7 @@ public class Grappling : MonoBehaviour
 
     void StopGrapple()
     {
+        RopeSound.Stop();
         lr.positionCount = 0;
         Destroy(joint);
     }

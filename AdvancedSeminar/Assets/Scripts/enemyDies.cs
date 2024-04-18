@@ -8,13 +8,20 @@ public class enemyDies : MonoBehaviour
     
     public GameObject animationScript;
 
+    public AudioSource death;
+
+    void Start()
+    {
+        
+    }
+
 
     private void OnTriggerEnter(Collider other)
     {
         if (player.GetComponent<WeaponSwing>().canKill == true)
         {
             animationScript.GetComponent<AllyAnimationTransition>().enemyIsSlain = true;
-
+            death.Play();
         }
     }
 }

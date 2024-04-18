@@ -8,11 +8,14 @@ public class CollectingFruit : MonoBehaviour
 
     public GameObject spawnFruit;
 
+    public AudioSource fruitSound;
+
     private void OnTriggerEnter (Collider other)
     {
         if(other.transform.tag == "Fruit")
         {
             other.gameObject.SetActive(false);
+            fruitSound.Play();
             this.gameObject.GetComponent<EndingFinishedCondition>().winScore++;
             Canvas.GetComponent<FruitCollection>().fruitGained();
             spawnFruit.GetComponent<SpawnFruit>().fruitSpawn();

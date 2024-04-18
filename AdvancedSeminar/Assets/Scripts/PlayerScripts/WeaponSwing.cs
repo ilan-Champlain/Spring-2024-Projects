@@ -8,6 +8,7 @@ public class WeaponSwing : MonoBehaviour
     
     public GameObject animationScript;
     public bool canKill = false;
+    public AudioSource weapon;
 
     // Update is called once per frame
     void Update()
@@ -23,6 +24,7 @@ public class WeaponSwing : MonoBehaviour
     {
         hammer.GetComponent<Animator>().Play("Player Hammer");
         canKill = true;
+        weapon.Play();
         yield return new WaitForSeconds(1.0f);
         Invoke("killReset", 0.5f);
         hammer.GetComponent<Animator>().Play("New State");
