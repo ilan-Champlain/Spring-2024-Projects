@@ -15,7 +15,9 @@ public class EndPlayerMovement : MonoBehaviour
     public AudioSource stepSounds;
     
     public Transform orientation;
-    
+
+    public GameObject endQuestion;
+
     public LayerMask whatIsGround;
     
     float horizontalInput;
@@ -71,7 +73,7 @@ public class EndPlayerMovement : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape)){
-            Application.Quit();
+            endQuestion.SetActive(true);
         }
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
         if(grounded)

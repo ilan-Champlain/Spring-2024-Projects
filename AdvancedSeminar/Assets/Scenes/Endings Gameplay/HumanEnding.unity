@@ -1991,6 +1991,7 @@ MonoBehaviour:
   jumpKey: 32
   stepSounds: {fileID: 1072013870}
   orientation: {fileID: 1817996676}
+  endQuestion: {fileID: 1643882364}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
@@ -2399,7 +2400,7 @@ MonoBehaviour:
   player: {fileID: 1072013868}
   respawn: {fileID: 1027873076}
   TimeKeeper: {fileID: 1084128321}
-  audio: {fileID: 1326682557}
+  endAudio: {fileID: 0}
 --- !u!82 &1326682557
 AudioSource:
   m_ObjectHideFlags: 0

@@ -5820,6 +5820,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   jumpForce: 6
+  endQuestion: {fileID: 1305746200}
   airMultiplier: 0
   jumpCooldown: 0.25
   readyToJump: 1

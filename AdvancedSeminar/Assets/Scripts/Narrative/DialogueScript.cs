@@ -24,6 +24,10 @@ public class DialogueScript : MonoBehaviour
 
     int dialogueLine = 1;
 
+    void Start()
+    {
+        Cursor.visible = true;
+    }
 
     // Update is called once per frame
     void Update()
@@ -84,10 +88,10 @@ public class DialogueScript : MonoBehaviour
             Image4.SetActive(false);
             Image5.SetActive(true);
         }
-        else if (dialogueLine == 9)
+        else if (dialogueLine == 10)
         {
-                dialogueLine = 0;
-                SceneManager.LoadScene(sceneName);
+           dialogueLine = 0;
+           SceneManager.LoadScene(sceneName);
         }
         
     }

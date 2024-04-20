@@ -26,6 +26,8 @@ public class GreenPlayerMovement : MonoBehaviour
 
     public float jumpForce;
 
+    public GameObject endQuestion;
+
     public float airMultiplier;
 
     public float jumpCooldown;
@@ -70,7 +72,7 @@ public class GreenPlayerMovement : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape)){
-            Application.Quit();
+            endQuestion.SetActive(true);
         }
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
         if(grounded)
