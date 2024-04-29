@@ -36,14 +36,14 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 wallJumpPower = new Vector2(8f, 16f);
 
     private bool isWallSliding;
-    private float slideSpeed = 2f;
+    private float slideSpeed = 0.7f;
 
 
     // Update is called once per frame
     void Update()
     {
 
-        speed = Mathf.Clamp(speed, -15f, 15f);
+        speed = Mathf.Clamp(speed, -13f, 13f);
 
         
 
@@ -90,6 +90,7 @@ public class PlayerMovement : MonoBehaviour
         WallJump();
         if (!isWallJumping)
         {
+            
             Flip();
         }
     }
@@ -115,6 +116,7 @@ public class PlayerMovement : MonoBehaviour
         if (IsWalled() && !IsGrounded() && horizontal != 0f)
         {
             isWallSliding = true;
+            
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -slideSpeed, float.MaxValue));
         }
         else
@@ -127,6 +129,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isWallSliding)
         {
+            speed = 0f;
             isWallJumping = false;
             wallJumpDirection = -transform.localScale.x;
             wallJumpCounter = wallJumpingTime;
