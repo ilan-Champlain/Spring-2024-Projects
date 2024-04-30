@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Tilemaps;
+
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -49,24 +49,24 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
-            speed = speed - 0.3f;
+            speed = speed - 0.5f;
 
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            speed = speed - 0.3f;
+            speed = speed - 0.5f;
             
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            speed = speed + 3;
+            speed = speed + 0.5f;
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            speed = speed + 3;
+            speed = speed + 0.5f;
         }
 
         if (!isWallJumping)
@@ -129,7 +129,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isWallSliding)
         {
-            speed = 0f;
+            
             isWallJumping = false;
             wallJumpDirection = -transform.localScale.x;
             wallJumpCounter = wallJumpingTime;
@@ -144,6 +144,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && wallJumpCounter >0f)
         {
             isWallJumping = true;
+            speed = 0f;
             rb.velocity = new Vector2(wallJumpDirection * wallJumpPower.x, wallJumpPower.y);
             wallJumpCounter = 0f;
             if (transform.localScale.x != wallJumpDirection)

@@ -3462,7 +3462,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c90cd3f6871d4b40ad65afb62e5d372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 6031800116254007878}
   sceneLoader: {fileID: 1710869093}
   timeText: {fileID: 1261102050}
 --- !u!1 &2070922204
@@ -3549,7 +3548,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.85
+  m_fontSize: 51.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3914,11 +3913,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 851bff752a0bea04fac7cdac1d90fb3b, type: 3}
---- !u!1 &6031800116254007878 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6242500713175741658, guid: 851bff752a0bea04fac7cdac1d90fb3b, type: 3}
-  m_PrefabInstance: {fileID: 6031800116254007877}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8215200800341924121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4032,6 +4026,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 772802276575190725, guid: 75918ec5e4e7d224ca96249ccd141675, type: 3}
+      propertyPath: Scene
+      value: Level1
+      objectReference: {fileID: 0}
+    - target: {fileID: 772802276575190725, guid: 75918ec5e4e7d224ca96249ccd141675, type: 3}
+      propertyPath: nextScene
+      value: Level2
+      objectReference: {fileID: 0}
     - target: {fileID: 6147867207052449272, guid: 75918ec5e4e7d224ca96249ccd141675, type: 3}
       propertyPath: m_LocalPosition.x
       value: 82.50069

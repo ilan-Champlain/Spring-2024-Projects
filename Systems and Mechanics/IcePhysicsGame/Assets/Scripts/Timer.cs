@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
-    public GameObject controller;
+    private GameObject controller;
     public GameObject sceneLoader;
 
     public TextMeshProUGUI timeText;
@@ -18,6 +18,7 @@ public class Timer : MonoBehaviour
     {
         currentScene = sceneLoader.GetComponent<SceneLoader>().Scene;
         //timeText = TextMeshProUGUI.FindObjectsByType("RunTimeText");
+        controller = GameObject.Find("GameController");
     }
 
     // Update is called once per frame

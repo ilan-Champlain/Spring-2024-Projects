@@ -6,7 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class RestartButton : MonoBehaviour
 {
-    public GameObject timer;
+    private GameObject timer;
+
+    private void Start()
+    {
+        timer = GameObject.Find("GameController");
+    }
     public void replayGame()
     {
         SceneManager.LoadScene("Level1");
