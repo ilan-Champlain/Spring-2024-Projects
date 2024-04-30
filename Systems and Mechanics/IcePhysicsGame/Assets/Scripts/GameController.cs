@@ -7,7 +7,9 @@ public class GameController : MonoBehaviour
 
     public static GameController control;
 
-    public int score;
+
+
+    public float runTime;
 
     private void Awake()
     {

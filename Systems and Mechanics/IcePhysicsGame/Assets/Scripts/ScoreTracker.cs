@@ -6,12 +6,6 @@ using UnityEngine.UI;
 
 public class ScoreTracker : MonoBehaviour
 {
-    public TextMeshProUGUI scoreUI;
     
-
-    private void Update()
-    {
-        scoreUI.text = GameController.control.score.ToString();
-    }
 
 }

@@ -78,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
         if (Input.GetKeyDown("space") && IsGrounded())
         {
-            Debug.Log("Jumping");
+            
             rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
         }
 

@@ -2,27 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
-    public float level1Time;
-    public float level2Time;
-    public float level3Time;
+    public GameObject controller;
+    public GameObject sceneLoader;
 
-    public TextMeshProUGUI timeL1;
-    public TextMeshProUGUI timeL2;
-    public TextMeshProUGUI timeL3;
+    public TextMeshProUGUI timeText;
 
+    private string currentScene;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentScene = sceneLoader.GetComponent<SceneLoader>().Scene;
+        //timeText = TextMeshProUGUI.FindObjectsByType("RunTimeText");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (currentScene != "WinScene")
+        {
+            controller.GetComponent<GameController>().runTime += Time.deltaTime;
+        }
+        else if (currentScene == "WinScene")
+        {
+            controller.GetComponent<GameController>().runTime += 0;
+        }
+
+        timeText.text = controller.GetComponent<GameController>().runTime.ToString();
     }
 }
